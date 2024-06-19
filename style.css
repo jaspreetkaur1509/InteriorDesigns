@@ -1,0 +1,633 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid white; */
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* navigation bar */
+.nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dadada;
+    border: 2px solid cornsilk;
+    color: navy;
+    padding: 0 4vw;
+}
+
+.nav2 {
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+}
+
+.nav h1 {
+    font-size: 2.1vw;
+    font-weight: 800;
+}
+
+.nav2 h3 {
+    font-size: 1.2vw;
+}
+
+.nav button {
+    font-size: 1.4vw;
+    font-weight: 600;
+    padding: 0.7vw 1.4vw;
+    color: black;
+    border: none;
+    background-color: yellow;
+    color: navy;
+    cursor: pointer;
+}
+
+.nav i {
+    font-size: 1.6vw;
+    font-weight: 800;
+    display: none;
+}
+
+/* Backround image */
+.bgimage {
+    background-image: url(InteriorImages/p1.webp);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 100%;
+}
+
+.div1 {
+    height: 40%;
+    width: 30%;
+    background-color: #dadada;
+    color: navy;
+    position: relative;
+    transform: translate(0%, -50%);
+    top: 50%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1 h1 {
+    font-size: 3.2vw;
+    font-weight: 600;
+}
+
+.div1 button {
+    padding: 0.7vw 1vw;
+    font-size: 1.2vw;
+    font-weight: 700;
+    background-color: yellow;
+    color: navy;
+    border: none;
+    margin-top: 1vw;
+}
+
+/* Interior Design Studio */
+.Interior {
+    width: 100vw;
+    height: 30vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.design {
+    width: 45%;
+    color: wheat;
+}
+
+.design h1 {
+    font-size: 3vw;
+}
+
+.design p {
+    font-size: 1.3vw;
+    width: 80%;
+    margin: 2% 2%;
+    word-spacing: 0.5vw;
+}
+
+/* Accessories */
+.Accessories {
+    width: 100vw;
+    background-color: black;
+    display: flex;
+}
+
+.star1 {
+    width: 50%;
+    display: flex;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+}
+
+.star1 button {
+    padding: 3% 3%;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: yellow;
+    border: none;
+    margin-top: 5%;
+}
+
+.div2 {
+    width: 70%;
+}
+
+.star1 h1 {
+    font-size: 3.5vw;
+    padding: 3% 0;
+}
+
+.star1 p {
+    font-size: 1.6vw;
+    word-spacing: 2%;
+}
+
+.star {
+    width: 50%;
+    background-color: white;
+    display: flex;
+}
+
+.img {
+    height: 67%;
+    width: 70%;
+    margin: auto;
+    z-index: 1;
+}
+
+.yellow {
+    background-color: yellow;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 80%;
+}
+
+/* -Icons */
+.icon {
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.same {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2%;
+}
+
+.same h3 {
+    font-size: 2vw;
+    text-align: center;
+    padding: 3% 0;
+}
+
+.figure {
+    height: 30%;
+    width: 30%;
+    margin: auto;
+}
+
+/* Add Images */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+}
+
+.first {
+    height: 60%;
+    width: 20%;
+    border: 4px solid yellow;
+}
+
+/* contact us */
+.Contact {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.Contact1 {
+    background-image: url(InteriorImages/i4.webp);
+    width: 70%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+
+.Contact2 {
+    width: 55%;
+    height: 55%;
+    background-color: wheat;
+    position: absolute;
+    transform: translate(0%, -50%);
+    top: 50%;
+    right: 0%;
+}
+
+.text {
+    width: 90%;
+    text-align: right;
+    padding: 8% 5%;
+}
+
+.Contact2 h1 {
+    font-size: 3.5vw;
+}
+
+.Contact2 p {
+    font-size: 1.5vw;
+    padding: 3% 0;
+}
+
+.Contact2 h3 {
+    font-size: 1.5vw;
+}
+
+.Contact3 {
+    width: 30%;
+    background-color: #dadada;
+}
+
+/* Media Query for mobile phone*/
+/* navigation bar */
+@media (max-width:500px) {
+    .nav {
+        padding: 0 5vw;
+        height: 80px;
+    }
+
+    .nav h1 {
+        font-size: 4vw;
+        font-weight: 700;
+    }
+
+    .nav2 h3 {
+        font-size: 2vw;
+        display: none;
+    }
+
+    .nav button {
+        display: none;
+    }
+
+    .nav2 i {
+        display: block;
+        font-size: 4.5vw;
+    }
+
+    /* Backround image */
+    .bgimage {
+        height: 100vh;
+        width: 100vw;
+        background-position: left;
+        background-size: cover;
+    }
+
+    .div1 {
+        height: 50%;
+        width: 50%;
+    }
+
+    .div1 h1 {
+        font-size: 3vw;
+        font-weight: 700;
+    }
+
+    .div1 button {
+        font-size: 4vw;
+    }
+
+    /* Interior Design Studio */
+    .Interior {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .design{
+        width: 80%;
+    }
+
+    .design h1 {
+        font-size: 4.5vw;
+        padding: 5% 0;
+
+    }
+
+    .design p {
+        font-size: 2.9vw;
+        text-align: center;
+        padding: 5% 0;
+    }
+
+    /* Accessories */
+    .Accessories {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .star1 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5% 0;
+    }
+
+    .star1 h1 {
+        font-size: 6vw;
+        font-weight: 800;
+        padding: 2% 0;
+    }
+
+    .star1 p {
+        font-size: 3.5vw;
+        font-weight: 600;
+        padding: 2% 0;
+    }
+
+    .star {
+        width: 100%;
+        margin: 8% 0;
+    }
+
+    .img {
+        height: 80%;
+        width: 80%;
+    }
+
+    /* -Icons */
+    .icon {
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .same {
+        width: 50%;
+        margin: 8% 0;
+    }
+
+    .same h3 {
+        font-size: 4.9vw;
+        padding: 5% 0;
+    }
+
+    .figure {
+        height: 46%;
+        width: 50%;
+    }
+
+    /* Add Images */
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first {
+        height: 50%;
+        width: 50%;
+        margin: 5% 0;
+    }
+
+    /* contact us */
+    .Contact {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .Contact1 {
+        background-position: center;
+    }
+
+    .Contact2 {
+        display: flex;
+        align-items: center;
+    }
+
+    .Contact2 h1 {
+        font-size: 5vw;
+        font-weight: 700;
+    }
+
+    .Contact2 p {
+        font-size: 3.5vw;
+    }
+
+    .Contact2 h3 {
+        font-size: 4vw;
+    }
+}
+
+/* Media Query for tab*/
+/* navigation bar */
+@media (max-width:1024px) {
+    .nav {
+        padding: 0 5.5vw;
+    }
+
+    .nav h1 {
+        font-size: 3.1vw;
+    }
+
+    .nav2 h3 {
+        font-size: 1.5vw;
+        display: none;
+    }
+
+    .nav button {
+        display: none;
+    }
+
+    .nav i {
+        display: block;
+        font-size: 3.5vw;
+    }
+
+    /* Backround image */
+    .div1 {
+        height: 40%;
+        width: 53%;
+    }
+
+    .div1 h1 {
+        font-size: 5vw;
+        font-weight: 700;
+    }
+
+    .div1 button {
+        font-size: 2.5vw;
+        padding: 2vw 3vw;
+    }
+
+    /* Interior Design Studio */
+    .Interior {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .design {
+        width: 80%;
+    }
+
+    .design h1 {
+        font-size: 5vw;
+        padding: 5% 0;
+        text-align: center;
+    }
+
+    .design p {
+        font-size: 3vw;
+        text-align: center;
+        padding: 5% 0;
+    }
+
+    /* Accessories */
+    .Accessories {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .star1 {
+        width: 90%;
+        height: 70%;
+        margin: 5% 0;
+    }
+
+    .star1 h1 {
+        font-size: 5vw;
+        font-weight: 800;
+        padding: 2% 0;
+    }
+
+    .star1 p {
+        font-size: 2.5vw;
+        font-weight: 600;
+        padding: 2% 0;
+    }
+
+    .star1 button {
+        font-size: 3vw;
+        padding: 4%;
+        margin-top: 6%;
+    }
+
+    .star {
+        width: 80%;
+    }
+
+    .img {
+        height: 70%;
+        width: 70%;
+    }
+
+    /* -Icons */
+    .icon {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .same {
+        width: 50%;
+        margin: 4% 0;
+    }
+
+    .same h3 {
+        font-size: 2.3vw;
+        padding: 4% 0;
+    }
+
+    .figure {
+        height: 60%;
+        width: 60%;
+    }
+
+    /* Add Images */
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first {
+        height: 90%;
+        width: 60%;
+        margin: 5% 0;
+    }
+
+    /* contact us */
+    .Contact {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .Contact1 {
+        background-position: center;
+    }
+
+    .Contact2 {
+        display: flex;
+        align-items: center;
+    }
+
+    .Contact2 h1 {
+        font-size: 5.2vw;
+        font-weight: 700;
+    }
+
+    .Contact2 p {
+        font-size: 3.2vw;
+        padding: 4% 0;
+    }
+
+    .Contact2 h3 {
+        font-size: 4vw;
+    }
+
+}
