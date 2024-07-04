@@ -50,6 +50,7 @@ body {
     background-color: yellow;
     color: navy;
     cursor: pointer;
+    border-radius: 15px;
 }
 
 .nav i {
@@ -96,6 +97,7 @@ body {
     color: navy;
     border: none;
     margin-top: 1vw;
+    border-radius: 15px;
 }
 
 /* Interior Design Studio */
